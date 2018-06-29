@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+  	body{
+  		background-image: url("http://notgoaway.com/wp-content/uploads/2017/07/Background-Color-67.jpg");
+  	}
+  	.data{
+  		margin-left: 30px;
+  		 margin-top: 20px;
+  	}
+  	h3{
+  	
+  	}
+
+  </style>
+
+</head>
+<body>
+
+<div class="container">
+	<h1> Web Page Speed Checker </h1>
+	<label>FILE PATH:</label>
+	<label id="error_msg" style="color:red"></label>
+	<input  class="form-control input-sm" type="text" name="file" id="file">
+	<button type="button" class="btn btn-success" style="margin-top: 10px;" name="check" id="check">Check Speed</button>
+
+
+	<div style="margin-top: 100px;">
+		
+		<div class="row" style="margin-left: 100px;">
+			<div class="col-md-6">
+				<h3>Page Response Time: <p class="data" id="response">0 second/s</p></h3>
+			</div>
+			
+			<div class="col-md-6">
+				<h3>Page Speed: <p class="data" id="speed">0 kb/s</p></h3>
+			</div>
+
+			<div class="col-md-12">
+				<div id="problem"></div>
+			</div>
+
+			<div class="col-md-12">
+				
+			</div>
+			
+		</div>
+	</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
