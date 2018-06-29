@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Speed Checker	</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style type="text/css">
+  	body{
+  		background-image: url("http://notgoaway.com/wp-content/uploads/2017/07/Background-Color-67.jpg");
+  	}
+    h3{
+      color: #cc3300;
+    }
+    p{
+      margin-left: 20px;
+    }
+  </style>
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Speed Checker</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="guide.html">Guide</a></li>
+      <li><a href="https://github.com/AustinZuniga/Web-Page-Speed-Checker">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="background-color: white;">
+    <div class="row">
+        <div class="">
+          <h1 style="color: #cc3300;">Ways to Make Your Website Load Faster</h1>
+          <div class="col-md-12">
+            <label>from: https://firstsiteguide.com/website-speed/</label>
+               <p>Speed can make or break a website. It affects your traffic, page views, conversions, sales and your overall reputation. By making it faster, you can improve your business or your fan base and help it grow. Studies have shown:</p>
+               <ul>
+                 <li><a href="#host"> Upgrade Your Web Hosting Plan</a></li>
+                 <li><a href="#plugin"> Remove Unnecessary Plugins</a></li>
+                 <li><a href="#http"> Minimize HTTP Requests</a></li>
+                 <li><a href="#alive"> Enable HTTP Keep-Alive</a></li>
+                 <li><a href="#minify"> Minify JavaScript and CSS Files</a></li>
+                 <li><a href="#external"> Reduce External Scripts</a></li>
+                 <li><a href="#broken"> Fix Broken Links</a></li>
+                 <li><a href="#hotlinking"> Disable Hotlinking</a></li>
+                 
+                 
+               </ul>
+                <hr>
+          </div>
+
+          <h3 id="host">Upgrade Your Web Hosting Plan</h3>
+          <div class="col-md-12">
+                <p> Many people opt for cheap hosting plans when they are first creating a website, so they choose shared hosting. Over time, they provide more content and their websites grow,<br> ultimately slowing down. If that is your case, the best choice would be to upgrade your web hosting plan. Upgrading your web hosting plan is the simplest and easiest way to improve the speed of your website.
+                <br><br>
+                If you have shared hosting, you should either move to a VPS or dedicated option. Either way, you will notice a significant difference in your website speed. Making a decision between the two options depends on your own business needs, so make sure you explore both of the options carefully and thoroughly.
+                <br><br>
+                Here’s just a quick note on both of them. VPS (Virtual Private Servers) hosting is perhaps the best option to go for, since it uses multiple servers for content distribution (sometimes even hundreds of servers). It is also a scalable solution and appeals most to small and medium businesses, as well as bloggers.
+                <br><br>
+                On the other hand, with dedicated servers, you get full control, since you get dedicated resources. You don’t have to share RAM, CPU, bandwidth or anything else, since all of the resources are dedicated only to you. Also, the bandwidth limits are higher but, since you don’t have multiple computers, this hosting option is a lot less flexible. However, it is much more expensive than VPS hosting.</p>
+            </div>
+            <h3 id="plugin">Remove Unnecessary Plugins</h3>
+            <div class="col-md-12">
+              <p>Every plugin you add requires resources to be able to run. However, more resources lead to a slower website. If you have some plugins installed that you no longer use or find unnecessary, you should deactivate and delete them. Not only can too many plugins slow down your website, but they can also cause security issues and crashes.
+              <br><br>
+              You can easily identify which plugins are slowing down your website by selectively disabling them and then measuring server performance. If you‘re using WordPress as your CMS, for instance, you can install the P3 (Plugin Performance Profiler) plugin, which is the best and most useful diagnostic plugin available.
+              <br><br>
+              This plugin will show you exactly which plugins are affecting the performance of your website, so that you can decide whether they’re unnecessary and should be removed or confirm they’re providing you with actual benefits. If the latter happens to be your case, you can try and keep them only on the pages on your website where you think they are absolutely necessary. You may also want to find alternate plugins to replace them or even code the content of such plugins into the theme of your website.
+              <br><br>
+              By removing unnecessary plugins, you can considerably improve your page load time and speed up your website. However, you should know that when it comes to plugins, it’s not just a matter of the number of plugins. You can have 50 plugins and still have a faster website than someone who installed 10 plugins on their site. The number of plugins is important, but there’s something in their quality as well. For instance, social sharing plugins can greatly affect your page load time, so you may want to consider embedding social media buttons into the source code of your website theme.
+              <br><br>
+              Therefore, you should avoid plugins that load a lot of scripts and a lot of styles, perform many remote requests and overwhelm every page on your website by adding a lot of database queries. Of course, plugins contribute to the functionality of your website and there are quite a lot of them that can help you improve it. But you should definitely keep only those you find absolutely necessary.
+              <br><br>
+              Note: If you’re using Drupal or Joomla, for example, you have no plugins to deal with in the first place. So you can speed up your website by disabling modules or adding speed optimization extensions. The best advice for Drupal is to never run more than 50 modules. Only run those that are absolutely necessary for the functionality of your website.
+              <br><br>
+              As for Joomla, make sure you check out the following extensions, as each of them can boost your website speed: JQuery Easy, LLFJ, Javascript Async and Defer and ScriptsDown.</p>
+            </div>
+            <h3 id="http">Minimize HTTP Requests</h3>
+            <div class="col-md-12">
+              <p> Websites can be slow because of too many HTTP requests. When someone visits your website, they request certain files. Their web browser requests those files from your server by using the HTTP protocol. These files include HTML files, CSS and JavaScript files. If you have a lot of them, there will be a lot of HTTP requests and your website will ultimately get slowed down.
+              <br><br>
+              This is why you should minimize HTTP requests. There are some excellent ways to do this.
+                  <ul>
+                  <li>Combine CSS, JS scripts and HTML files together.</li>
+                  <li>Use CSS instead of images whenever possible.</li>
+                  <li>Reduce the number of elements on every web page.</li>
+                  <li>Install a caching plugin.</li>
+                  <li>Reduce redirects, which create additional HTTP requests to your server and increase your page load time.</li>
+              </ul>
+              For instance, if your website is responsive, mobile users that visit your website will be redirected to the responsive version of it. You can take two actions to ensure those kinds of redirects don’t slow down your website. You can either set up an HTTP redirect to directly send mobile users to a device-specific URL without any additional redirects or set up a JavaScript redirect to identify a mobile-equivalent URL and redirect mobile users to it. However, the latter option can cause latency, because a web page needs to be downloaded first on the client side of redirection before JavaScript can be executed and redirection can take place. </p>
+            </div>
+            <h3 id="alive"> Enable HTTP Keep-Alive</h3>
+            <div class="col-md-12">
+              <p> When your web server receives an HTTP request from your website visitor’s browser, that is, when a visitor requests a certain file, the browser asks the server for a permission to download the file. It does so for each and every file individually. This takes up a lot of bandwidth and memory, not to mention that it uses more processing power. Eventually, it causes a lot of load on your server and slows down your website.
+              <br>
+              You can make your website faster by enabling HTTP Keep-Alive, which will create a single open connection for multiple file requests to your server, thus greatly speeding up your website. Simply put, the server tells the browser it can download multiple files at the same time, without putting too much load on the server. When the number of connections to your server is limited, a lot of bandwidth will be saved.
+              <br>
+              You can enable HTTP Keep-Alive by copying and pasting the following code into your .htaccess file:
+              <br><br>
+              <b>
+              < IfModule mod_headers.c><br>
+              Header set Connection keep-alive<br>
+              < IfModule></b> </p>
+            </div>
+            <h3 id="minify">Minify JavaScript and CSS Files</h3>
+            <div class="col-md-12">
+              <p>
+               If you have a ton of JavaScript and CSS files on your website, there will be a lot of HTTP requests when your website visitors want to access certain files. Since their web browser will treat those files individually, those numerous HTTP requests will considerably slow down your website.
+               <br><br>
+              While minimizing (minifying) HTTP requests and enabling HTTP, Keep-Alive can greatly improve your website speed. You should consider minifying JavaScript and CSS files, since this can also significantly speed up your website. By putting all JavaScript files into one single JavaScript file, as well as putting all CSS files into one CSS file, you will reduce their number. This will reduce the number of HTTP requests and speed up your website.
+              <br><br>
+              There are many minifying tools you can try, but you may want to start with a free and very easy-to-use WillPeavy plugin that can help you quickly minify HTML, CSS and JavaScript files. BWP Minify (Better WordPress Minify) is also a great plugin that can help you combine and minify your JavaScript and CSS files, but it’s a plugin for WordPress only. </p>
+            </div>
+            <h3 id="external">Reduce External Scripts</h3>
+            <div class="col-md-12">
+              <p>
+                 External scripts that you add to your website in the form of JavaScript codes make HTTP requests every time your web pages load. As you already know, this slows down your website. Those external scripts can be external commenting systems, pop-up boxes, external fonts, website analytics services, social media boxes, such as Facebook “like my page” box, and many more.
+                 <br><br>
+                Although you should certainly not eliminate all your external scripts, you should reduce them, as that will help you speed up your website. You can use Pingdom, for instance, to check which external scripts are taking the longest to load and, if they happen to be unnecessary, you can eliminate them.
+                 <br><br>
+                If you embed videos and other multimedia files from websites which happen to be slow, your website speed can be negatively affected. To improve your page load time, make sure you request external files only from fast and reliable websites. You may also want to consider limiting the number of external requests your website makes altogether.</p>
+            </div>
+            <h3 id="broken">Fix Broken Links</h3>
+            <div class="col-md-12">
+              <p>
+                Broken links in your content cannot slow down your website, but they can greatly affect user experience, so you should pay close attention to all of them. However, broken links in your CSS, JavaScript and image URLs can negatively affect your website speed. Scan your links on a regular basis and fix broken ones as soon as you notice them.
+                 <br><br>
+                Broken links are most commonly found in image source files, which happens when the URL is wrong. These links can easily be overlooked, especially when the size of a certain image is defined as very small. When there’s a broken link in your image, that is, when a 404 error appears, that broken link creates a wasted response from an HTTP request, which makes your website slower. The browser attempts to download an image that’s not available, so your web page spends more time trying to download the image, slowing down your website.
+                telephone
+                 <br><br>
+                99 % of response time problems are still caused by the UI being too slow
+                 <br><br>
+                Broken links can also be found in the CSS link tags in the head of your HTML documents. Just as with image files, if your CSS file is not where you have linked to, an HTTP request will result in a useless response and it will return with a 404 code. It’s especially important to regularly check for broken links if you use a lot of external CSS files, since they can be moved and result in a 404 error.
+                 <br><br>
+                If there’s a broken link in the JavaScript source URL, your website can also be slowed down as with image source files and CSS links. But the browser may also try to interpret JavaScript and cause not only increased download time, but also bad script interactions. When the browser attempts to load a 404 page instead of JavaScript, all the other downloads stop until the loading of a 404 page is complete. This is why you should always put your JavaScript at the bottom of your HTML documents (right before the closing </body> tag), which is especially important when there are broken links involved.
+                 <br><br>
+                You can check for broken links with a simple Online Broken Link Checker and, if you are using WordPress, you can try the WordPress Broken Link Checker for free. For Drupal or Joomla, you can use the Link Checker module or the Link Checker extension.
+                speedometer
+                 <br><br>
+                Implementing an automated front-end optimization solution alongside a CDN can make pages up to four times faster
+                 <br><br>
+                However, sometimes broken links aren’t caught by broken link checkers, so the best way to check for them is to regularly look at your server logs. There are several tools you can use to scan for URLs that are getting 404 errors to see which pages are causing them and then take action to fix them immediately. Also, you can use the Screaming Frog SEO Log File Analyser to find broken links and fix them before they cause 404 errors. 
+              </p>
+            </div>
+            <h3 id="hotlinking">Disable Hotlinking</h3>
+            <div class="col-md-12">
+              <p> 
+                 If you don’t disable hotlinking, you allow people to use the content that’s hosted on your server for their own websites. By allowing them to practically use your servers and your content for their websites, you’ll get a lot of server load for no reason.
+                 <br><br>
+                This is why you should disable hotlinking and prevent people from stealing your server resources. However, in order to do that, you need to add the necessary code to your server. There are some tools that can help you generate the right code, but your web hosting provider can also help you with this. 
+                <br><br> 
+                Hotlinking usually involves images and other multimedia files, which generally take up a lot of bandwidth. Therefore, if you run a website with few to no images, disabling hotlinking will actually not affect your website speed.
+                <br><br>
+                Speaking of hotlinking, you should not just disable it, but you should avoid it altogether. Instead of linking to images on someone’s website, load them on your own server. You may think that image links will save you a lot of bandwidth, but they can actually slow down your website if the website with the image you linked to is slow and unreliable. What’s more, they may experience downtime or crash, so always load every image on your own server before you link to them. </p>
+          </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
