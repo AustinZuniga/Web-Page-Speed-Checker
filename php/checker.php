@@ -18,6 +18,7 @@ if (file_exists($include)) {
 	readfile($cachepage); // read cache
 	$page_response = microtime() - $starttime; // page response time
 	$speed = round((ob_get_length() / $page_response) / 1024, 3); //KB/s
+	$filesize = filesize($include);
 
 	$buffer = ob_get_clean(); // store buffer in variable
 	$buffer = ''; // empty buffer
@@ -26,7 +27,9 @@ if (file_exists($include)) {
 	// the data
 	echo '{
 		"response" : "'.$page_response.'",
-		"speed" : "'.$speed.'"
+		"speed" : "'.$speed.'",
+		"filesize" : "'.$filesize.'",
+		"filename" : "'.$include.'"
 
 	}';
 

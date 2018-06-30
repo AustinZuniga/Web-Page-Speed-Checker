@@ -85,7 +85,7 @@
               <p> Websites can be slow because of too many HTTP requests. When someone visits your website, they request certain files. Their web browser requests those files from your server by using the HTTP protocol. These files include HTML files, CSS and JavaScript files. If you have a lot of them, there will be a lot of HTTP requests and your website will ultimately get slowed down.
               <br><br>
               This is why you should minimize HTTP requests. There are some excellent ways to do this.
-                  <ul>
+              <ul>
                   <li>Combine CSS, JS scripts and HTML files together.</li>
                   <li>Use CSS instead of images whenever possible.</li>
                   <li>Reduce the number of elements on every web page.</li>
@@ -157,6 +157,30 @@
                 Hotlinking usually involves images and other multimedia files, which generally take up a lot of bandwidth. Therefore, if you run a website with few to no images, disabling hotlinking will actually not affect your website speed.
                 <br><br>
                 Speaking of hotlinking, you should not just disable it, but you should avoid it altogether. Instead of linking to images on someone’s website, load them on your own server. You may think that image links will save you a lot of bandwidth, but they can actually slow down your website if the website with the image you linked to is slow and unreliable. What’s more, they may experience downtime or crash, so always load every image on your own server before you link to them. </p>
+                <hr>
+          </div>
+          <h1 id="wrong" style="color: #cc3300;">Why Speed Checker says there's something wrong in my webpage?</h1>
+          <div class="col-md-12">
+            <p>
+              Web Page Speed Checker has its limitations. It cannot function properly if your web page has:
+              <br><br>
+               <ul>
+                 <li><a href="#redirect"> Redirect functions</a></li>
+                 <li><a href="#error"> Error in Pages</a></li>  
+               </ul>
+            </p>
+          </div>
+          <h3 id="redirect"> Redirect functions</h3>
+          <div class="col-md-12">
+           <p>
+             Redirect functions such as header("Location: index.php") in php or window.location(index.php) in javascript MUST be removed. 
+           </p> 
+          </div>
+          <h3 id="error"> Error in Pages</h3>
+          <div class="col-md-12">
+           <p>
+             Web Page Speed Checker cannot work properly if your web page has problems that causes not to run properly like too much redirection of links, syntax error and a web page that relies in internet connection (if you're not connected to internet) 
+           </p> 
           </div>
       </div>
   </div>
