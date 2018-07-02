@@ -10,7 +10,7 @@
   		background-image: url("http://localhost/Web-Page-Speed-Checker/img/Background-Color-67.jpg");
   	}
   	.data{
-  		margin-left: 30px;
+  		margin-left: 10px;
   		 margin-top: 20px;
   	}
   	h3{
@@ -47,19 +47,23 @@
 	<button type="button" class="btn btn-success btn-lg" style="margin-top: 10px;" name="check" id="check">Check Speed</button>
 
 
-	<div style="margin-top: 50px;">
-	 <div class="h2" id="filename"></div>
-		<div class="row" style="margin-left: 90px;">
-      <div class="col-md-4">
+	<div style="margin-top: 30px;">
+		<div class="row" style="margin-left: 0px;">
+      <div class="col-md-3">
         <h3>Page Size: <p class="data" id="filesize">0 byte</p></h3>
       </div>
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3>Page Response Time: <p class="data" id="response">0 second/s</p></h3>
 			</div>
 			
-			<div class="col-md-4">
+			<div class="col-md-3">
 				<h3>Page Speed: <p class="data" id="speed">0 kb/s</p></h3>
 			</div>
+
+
+      <div class="col-md-3">
+        <h3>Memory Usage: <p class="data" id="memory">0 MB</p></h3>
+      </div>
 
 			<div class="col-md-12">
 				<div class="result" id="result"></div>

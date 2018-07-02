@@ -25,10 +25,12 @@ $(document).ready(function() {
               var data = JSON.parse(result);
               data['response'] = parseFloat(data['response']);
               data['speed'] = parseFloat(data['speed']);
+              data['memory'] = parseFloat(data['memory']);
               document.getElementById('response').innerHTML = data['response'].toFixed(5) + " second/s";
               document.getElementById('speed').innerHTML = data['speed'] +" kb/s";
               document.getElementById('filesize').innerHTML = data['filesize'] + " byte";
-              document.getElementById('filename').innerHTML = "Selected Web Page: " + data['filename'];
+              //document.getElementById('filename').innerHTML = "Selected Web Page: " + data['filename'];
+              document.getElementById('memory').innerHTML = data['memory'].toFixed(2) + " MB";
               $("#check").text('Check Speed');
               // response time standard
               if(data['response'] < 0.9){
