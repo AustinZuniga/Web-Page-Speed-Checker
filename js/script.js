@@ -21,8 +21,9 @@ $(document).ready(function() {
             }
             else{
               //get data
+              var data = 0;
               document.getElementById('error_msg').innerHTML = "";
-              var data = JSON.parse(result);
+              data = JSON.parse(result);
               data['response'] = parseFloat(data['response']);
               data['speed'] = parseFloat(data['speed']);
               data['memory'] = parseFloat(data['memory']);
@@ -58,8 +59,27 @@ $(document).ready(function() {
 
 
 
+              e.preventDefault();
+              $.ajax({
+                type: "POST",
+                url: "php/checker.php",
+                data: {
+                  files: $("#file").val()
+                 
+                },
+                success: function(result) {
+                  // if no file return error
+                  document.getElementById('html').innerHTML = result;          
+                },
+                error: function(result) {
+                   // return error if Web page containes error
+                   }
+              });
 
-            }
+
+
+
+                  }
           },
           error: function(result) {
              // return error if Web page containes error
